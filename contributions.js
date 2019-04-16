@@ -64,7 +64,7 @@ function handleContributionsUpdate(req,res,next)
    // convert to numbers
    var preTax = parseInt(req.body.preTax);
    var afterTax = parseInt(req.body.afterTax);
-   var roth = eval(req.body.roth);
+   var roth = parseInt(req.body.roth);
 
    var userId = req.session.userId;
 
