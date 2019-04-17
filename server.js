@@ -54,7 +54,7 @@ function setup()
 		     resave: true,
 		     cookie: {
 // 			httpOnly: true,
-			secure: true
+// 			secure: true
 		     }}));
 
    // Register templating engine
