@@ -28,7 +28,7 @@
         {% for doc in memosList %}
         <div class="panel panel-info">
             <div class="panel-body">
-                <span>{{ marked(doc.memo) }}</span>
+                {{ marked(doc.memo) }}
             </div>
         </div>
         {% endfor %}
