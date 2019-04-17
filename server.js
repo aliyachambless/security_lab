@@ -53,7 +53,7 @@ function setup()
 		     saveUninitialized: true,
 		     resave: true,
 		     cookie: {
-			httpOnly: true,
+			httpOnly: true
 // 			secure: true
 		     }}));
 
