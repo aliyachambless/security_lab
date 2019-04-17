@@ -51,7 +51,11 @@ function setup()
 
    app.use(session({ secret: process.env.COOKIE_SECRET,
 		     saveUninitialized: true,
-		     resave: true }));
+		     resave: true,
+		     cookie: {
+			httpOnly: true,
+			secure: true
+		     }}));
 
    // Register templating engine
    app.engine(".html", consolidate.swig);
@@ -124,14 +128,6 @@ function setup()
 	 autoescape: true
     });
 	
-	
-app.use(express.session({
-    secret: "s3Cur3",
-    cookie: {
-        httpOnly: true,
-        secure: true
-    }
-}));
 
    var server = app.listen(8080);
 
