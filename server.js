@@ -124,10 +124,6 @@ function setup()
 	 autoescape: true
     });
 	
-swig.init({
-    root: __dirname + "/app/views",
-    autoescape: true //default value
-});
 	
 app.use(express.session({
     secret: "s3Cur3",
